@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import RatingStars from './RatingStars';
 
@@ -7,9 +7,10 @@ export interface TripCardProps {
   destination: string;
   date: string;
   rating: number;
+  onUsun?: () => void;
 }
 
-export default function TripCard({ title, destination, date, rating }: TripCardProps) {
+export default function TripCard({ title, destination, date, rating, onUsun }: TripCardProps) {
   return (
     <View style={styles.card}>
       <Text style={styles.title}>{title}</Text>
@@ -17,6 +18,12 @@ export default function TripCard({ title, destination, date, rating }: TripCardP
         {destination} | {date}
       </Text>
       <RatingStars rating={rating} />
+      {onUsun &&  (
+        <Pressable onPress={onUsun}>
+          <Text style={{ color: 'red', marginTop: 8, 
+            fontWeight: 'bold' }}>Usun</Text>
+        </Pressable>
+      )}
     </View>
   );
 }
