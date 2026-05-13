@@ -19,7 +19,7 @@ export default function RatingStars({ rating, maxStars = 5 }: RatingStarsProps) 
         key={i}
         name={i <= normalizedRating ? 'star' : 'star-outline'}
         size={16}
-        color={Colors.accent}
+        color={Colors.dark.accent}
         style={styles.star}
       />
     );

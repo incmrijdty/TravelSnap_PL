@@ -22,7 +22,7 @@ export default function ScreenHeader({ tripCount }: ScreenHeaderProps) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: Colors.background,
+    backgroundColor: Colors.dark.background,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -36,23 +36,23 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: Colors.textPrimary,
+    color: Colors.dark.text,
   },
   subtitle: {
     fontSize: 14,
-    color: Colors.textSecondary,
+    color: Colors.dark.textSecondary,
     marginTop: 2,
   },
   badge: {
     width: 36,
     height: 36,
     borderRadius: 18,
-    backgroundColor: Colors.accent,
+    backgroundColor: Colors.dark.accent,
     justifyContent: 'center',
     alignItems: 'center',
   },
   badgeText: {
-    color: Colors.textPrimary,
+    color: Colors.dark.text,
     fontWeight: 'bold',
     fontSize: 16,
   },

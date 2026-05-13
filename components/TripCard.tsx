@@ -17,7 +17,7 @@ export default function TripCard({ title, destination, date, rating, onDelete }:
         <Text style={styles.title}>{title}</Text>
         {onDelete && (
           <Pressable onPress={onDelete} style={styles.deleteButton}>
-            <Ionicons name="close" size={16} color={Colors.accent} />
+            <Ionicons name="close" size={16} color={Colors.dark.accent} />
           </Pressable>
         )}
       </View>
@@ -32,7 +32,7 @@ export default function TripCard({ title, destination, date, rating, onDelete }:
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: Colors.card,
+    backgroundColor: Colors.dark.card,
     padding: 16,
     borderRadius: 16,
     marginBottom: 12,
@@ -49,11 +49,11 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: Colors.textPrimary,
+    color: Colors.dark.text,
     flex: 1,
   },
   deleteButton: {
-    backgroundColor: Colors.accentTransparent,
+    backgroundColor: Colors.dark.background,
     padding: 6,
     borderRadius: 12,
     marginLeft: 8,
@@ -62,12 +62,12 @@ const styles = StyleSheet.create({
   },
   meta: {
     fontSize: 13,
-    color: Colors.textSecondary,
+    color: Colors.dark.textSecondary,
     marginTop: 4,
   },
   separator: {
     borderBottomWidth: 1,
-    borderBottomColor: Colors.border,
+    borderBottomColor: Colors.dark.border,
     marginVertical: 12,
   },
 });

@@ -54,28 +54,28 @@ export default function AddTripForm({ onAdd }: AddTripFormProps) {
       <TextInput
         style={styles.input}
         placeholder="Title"
-        placeholderTextColor={Colors.textSecondary}
+        placeholderTextColor={Colors.dark.textSecondary}
         value={title}
         onChangeText={setTitle}
       />
       <TextInput
         style={styles.input}
         placeholder="Destination"
-        placeholderTextColor={Colors.textSecondary}
+        placeholderTextColor={Colors.dark.textSecondary}
         value={destination}
         onChangeText={setDestination}
       />
       <TextInput
         style={styles.input}
         placeholder="Date (YYYY-MM-DD)"
-        placeholderTextColor={Colors.textSecondary}
+        placeholderTextColor={Colors.dark.textSecondary}
         value={date}
         onChangeText={setDate}
       />
       <TextInput
         style={styles.input}
         placeholder="Rating (1-5)"
-        placeholderTextColor={Colors.textSecondary}
+        placeholderTextColor={Colors.dark.textSecondary}
         value={rating}
         onChangeText={setRating}
         keyboardType="numeric"
@@ -90,7 +90,7 @@ export default function AddTripForm({ onAdd }: AddTripFormProps) {
 
 const styles = StyleSheet.create({
   form: {
-    backgroundColor: Colors.card,
+    backgroundColor: Colors.dark.card,
     padding: 16,
     borderRadius: 16,
     marginBottom: 24,
@@ -103,27 +103,27 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 16,
-    color: Colors.textPrimary,
+    color: Colors.dark.text,
   },
   input: {
-    backgroundColor: Colors.inputBg,
+    
     borderWidth: 1,
-    borderColor: Colors.inputBorder,
+
     borderRadius: 8,
     padding: 12,
     marginBottom: 12,
     fontSize: 16,
-    color: Colors.textPrimary,
+    color: Colors.dark.text,
   },
   addButton: {
-    backgroundColor: Colors.accent,
+    backgroundColor: Colors.dark.accent,
     padding: 16,
     borderRadius: 12,
     alignItems: 'center',
     marginTop: 8,
   },
   addButtonText: {
-    color: Colors.textPrimary,
+    color: Colors.dark.text,
     fontWeight: 'bold',
     fontSize: 16,
   },

@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   },
   statCard: {
     flex: 1,
-    backgroundColor: Colors.card,
+    backgroundColor: Colors.dark.card,
     padding: 12,
     borderRadius: 12,
     alignItems: 'center',
@@ -50,11 +50,11 @@ const styles = StyleSheet.create({
   statValue: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: Colors.primary,
+    color: Colors.dark.tint,
   },
   statLabel: {
     fontSize: 12,
-    color: Colors.textSecondary,
+    color: Colors.dark.textSecondary,
     marginTop: 4,
   },
 });
